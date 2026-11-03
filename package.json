@@ -1,0 +1,14 @@
+{
+  "name": "voguex-luxury-fashion-ecommerce",
+  "version": "1.0.0",
+  "description": "VOGUEX - Premium 3D Fashion E-Commerce Platform",
+  "scripts": {
+    "dev:server": "cd server && node server.js",
+    "dev:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build",
+    "seed": "cd server && node utils/seeder.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

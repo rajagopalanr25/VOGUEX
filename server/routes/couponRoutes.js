@@ -1,0 +1,12 @@
+import express from 'express';
+import { validateCoupon, getCoupons, createCoupon } from '../controllers/couponController.js';
+import { protect, admin } from '../middleware/authMiddleware.js';
+
+const router = express.Router();
+
+router.post('/validate', validateCoupon);
+router.get('/', protect, admin, getCoupons);
+router.post('/', protect, admin, createCoupon);
+
+export default router;
+
